@@ -9,6 +9,8 @@ import {
   SiWindows,
   SiGitlab,
   SiGithub,
+  SiKubernetes
+
 } from "react-icons/si";
 
 function Toolstack() {
@@ -16,6 +18,7 @@ function Toolstack() {
     { icon: <SiLinux />, name: "Linux" },
     { icon: <SiWindows />, name: "Windows" },
     { icon: <SiDocker />, name: "Docker" },
+    { icon: <SiKubernetes />, name: "Kubernetes" },
     { icon: <DiGit />, name: "Git" },
     { icon: <SiGitlab />, name: "GitLab" },
     { icon: <SiGithub />, name: "GitHub" },

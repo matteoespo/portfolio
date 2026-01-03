@@ -3,10 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 
-// Personal / placeholders
 import comingSoon from "../../Assets/Projects/coming-soon.png";
-
-// University project images
 import thesis from "../../Assets/Projects/thesis.png";
 import idp from "../../Assets/Projects/idp.png";
 
@@ -15,8 +12,6 @@ function Projects() {
     <Container fluid className="project-section">
       <Particle />
       <Container>
-
-        {/* PERSONAL PROJECTS */}
         <h1 className="project-heading">
           <strong className="purple">Personal </strong>Projects
         </h1>
@@ -28,12 +23,10 @@ function Projects() {
               isBlog={false}
               title="Coming soon"
               description="New personal projects will be added here soon."
-              // niente link perché non è ancora pubblicato
             />
           </Col>
         </Row>
 
-        {/* UNIVERSITY PROJECTS */}
         <h1 className="project-heading">
           Projects at <strong className="purple">University</strong>
         </h1>
@@ -44,11 +37,7 @@ function Projects() {
               imgPath={thesis}
               isBlog={false}
               title="Assessment of Static Environment Fidelity on Automated Driving"
-              description={`Master's Thesis — Investigated how different levels of static environment fidelity in simulation (object density, textures, lighting, weather) affect the behavior of an automated driving software stack.
-\n
-• Developed multiple variants of a simulated environment in CARLA with systematically varied static fidelity.\n
-• Designed and ran scenarios with an automated driving system, combining objective metrics (lane-keeping, collision avoidance, comfort).\n
-• Analyzed results to quantify when increased fidelity meaningfully impacts safety and comfort, and when it does not.`}
+              description={`Master's Thesis — Investigated how different levels of static environment fidelity in simulation (object density, textures, lighting, weather) affect the behavior of an automated driving software stack.\n\n• Developed multiple variants of a simulated environment in CARLA with systematically varied static fidelity.\n• Designed and ran scenarios with an automated driving system, combining objective metrics (lane-keeping, collision avoidance, comfort).\n• Analyzed results to quantify when increased fidelity meaningfully impacts safety and comfort, and when it does not.`}
             />
           </Col>
 
@@ -57,11 +46,7 @@ function Projects() {
               imgPath={idp}
               isBlog={false}
               title="Static Scenario Generation for Automated Driving"
-              description={`Semester Project — Built a pipeline to generate realistic static driving scenarios in CARLA using multimodal sensor data from real-world driving (camera, LiDAR, GNSS, odometry).
-\n
-• Created concatenated LiDAR point clouds (GLIM), removed ground planes and applied clustering to extract edges and roadside objects.\n
-• Used photogrammetry (Agisoft Metashape) to reconstruct 3D buildings/maps and integrated them into CARLA via Python API.\n
-• Applied YOLO-based detection + clustering to label assets and fused 2D detections with 3D clusters, with support for assisted labeling.`}
+              description={`Semester Project — Built a pipeline to generate realistic static driving scenarios in CARLA using multimodal sensor data from real-world driving (camera, LiDAR, GNSS, odometry).\n\n• Created concatenated LiDAR point clouds (GLIM), removed ground planes and applied clustering to extract edges and roadside objects.\n• Used photogrammetry (Agisoft Metashape) to reconstruct 3D buildings/maps and integrated them into CARLA via Python API.\n• Applied YOLO-based detection + clustering to label assets and fused 2D detections with 3D clusters, with support for assisted labeling.`}
             />
           </Col>
         </Row>

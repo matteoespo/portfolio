@@ -34,7 +34,7 @@ function Home2() {
               <Button as={Link} to="/about" variant="outline-light" style={{ borderWidth: "2px" }}>
                 More about me
               </Button>
-              <Button as={Link} to="/projects" variant="primary">
+              <Button as={Link} to="/project" variant="primary">
                 Projects
               </Button>
             </div>
