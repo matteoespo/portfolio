@@ -1,12 +1,12 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { DiGit } from "react-icons/di";
+import { FaWindows } from "react-icons/fa";
 import {
   SiVisualstudiocode,
   SiPostman,
   SiLinux,
   SiDocker,
-  SiWindows,
   SiGitlab,
   SiGithub,
   SiKubernetes
@@ -16,7 +16,7 @@ import {
 function Toolstack() {
   const items = [
     { icon: <SiLinux />, name: "Linux" },
-    { icon: <SiWindows />, name: "Windows" },
+    { icon: <FaWindows />, name: "Windows" },
     { icon: <SiDocker />, name: "Docker" },
     { icon: <SiKubernetes />, name: "Kubernetes" },
     { icon: <DiGit />, name: "Git" },
