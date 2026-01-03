@@ -8,30 +8,40 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Matteo Esposito Marroccella </span>
-            from <span className="purple"> Verona, Italy</span>, currently living in <span className="purple">Munich, Germany.</span>
-            <br /> I am a second year Master Student in Informatics
-             at Technische Universität München (TUM).
-            <br />
-            Additionally, I am currently employed as a Working Student Developer at
-            Siemens AG.
+            Hi, I’m <span className="purple">Matteo Esposito Marroccella</span>.
+            I’m from <span className="purple">Verona, Italy</span> and currently based in{" "}
+            <span className="purple">Munich, Germany</span>.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            I’m a software engineer with a strong interest in{" "}
+            <span className="purple">simulation</span>,{" "}
+            <span className="purple">automated systems</span> and{" "}
+            <span className="purple">robotics/automated driving</span>.
+            I enjoy building reliable tools and pipelines — from backend/services to
+            simulation workflows — with a focus on clean engineering and measurable results.
+            <br />
+            <br />
+            Currently, I work as a <span className="purple">Working Student Developer</span> at{" "}
+            <span className="purple">Siemens AG</span> while completing my{" "}
+            <span className="purple">M.Sc. in Informatics</span> at{" "}
+            <span className="purple">TUM</span>.
           </p>
+
+          <p style={{ color: "rgb(155 126 255)", marginBottom: "8px" }}>
+            What I like working on:
+          </p>
+
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Cooking
+              <ImPointRight /> Simulation & scenario generation
             </li>
             <li className="about-activity">
-              <ImPointRight /> Working Out
+              <ImPointRight /> Backend tools and automation (Python, CI/CD)
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImPointRight /> Robotics software stacks (ROS2, sensors, mapping)
             </li>
           </ul>
-
-          <footer className="blockquote-footer">Matteo</footer>
         </blockquote>
       </Card.Body>
     </Card>
