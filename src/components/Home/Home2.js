@@ -1,98 +1,105 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import myImg from "../../Assets/avatar.png";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiFillMail,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillMail } from "react-icons/ai";
 import { FaLinkedinIn, FaXing } from "react-icons/fa";
-
 
 function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
-        <Row>
+        <Row className="align-items-center">
           <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+            <h1 style={{ fontSize: "2.2em" }}>
+              What I’m <span className="purple">building</span>
             </h1>
-            <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
-              <br />
-              <br />I am fluent in
-              <i>
-                <b className="purple"> Python, Javascript and Django. </b>
-              </i>
-              <br />
-              <br />
-              My field of Interest's are building new&nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Artificial Intelligence.
-                </b>
-              </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for AI and Cars
-              in the field of <b className="purple">Autonomous Driving.</b>
 
-              <br /><br />
-              I attended a practical course in which we worked on <b className="purple">Cooperative Adaptive Cruise Control.</b> 
+            <p className="home-about-body">
+              I work on software for <b className="purple">simulation</b> and{" "}
+              <b className="purple">automated systems</b>, with a focus on
+              engineering tooling that is reproducible and easy to maintain.
             </p>
+
+            <p className="home-about-body" style={{ marginTop: "10px" }}>
+              <span className="purple">•</span> Scenario generation & simulation workflows
+              <br />
+              <span className="purple">•</span> Robotics/automated driving software stacks
+              <br />
+              <span className="purple">•</span> Automation & pipelines (Python, CI/CD, Docker)
+            </p>
+
+            <div style={{ marginTop: 18, display: "flex", gap: "12px", flexWrap: "wrap" }}>
+              <Button as={Link} to="/about" variant="outline-light" style={{ borderWidth: "2px" }}>
+                More about me
+              </Button>
+              <Button as={Link} to="/projects" variant="primary">
+                Projects
+              </Button>
+            </div>
           </Col>
-          <Col md={4} className="myAvtar">
+
+          <Col md={4} className="myAvtar" style={{ textAlign: "center" }}>
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img
+                src={myImg}
+                className="img-fluid"
+                alt="avatar"
+                style={{ maxHeight: "300px" }}
+              />
             </Tilt>
           </Col>
         </Row>
-        <Row>
+
+        <Row style={{ marginTop: "25px" }}>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
-            <p>
-              Feel free to <span className="purple">connect </span>with me
-            </p>
+            <h1>Connect</h1>
+            <p>Feel free to reach out.</p>
+
             <ul className="home-about-social-links">
-            <li className="social-icons">
+              <li className="social-icons">
                 <a
-                  href = "mailto: matteoespositomarroccella@gmail.com"
+                  href="mailto: matteoespositomarroccella@gmail.com"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
+                  aria-label="email"
                 >
                   <AiFillMail />
                 </a>
               </li>
+
               <li className="social-icons">
                 <a
                   href="https://github.com/matteoespo"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
+                  aria-label="github"
                 >
                   <AiFillGithub />
                 </a>
               </li>
+
               <li className="social-icons">
                 <a
                   href="https://www.linkedin.com/in/matteo-esposito-marroccella/"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
+                  aria-label="linkedin"
                 >
                   <FaLinkedinIn />
                 </a>
               </li>
+
               <li className="social-icons">
                 <a
                   href="https://www.xing.com/profile/Matteo_EspositoMarroccella/"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
+                  aria-label="xing"
                 >
                   <FaXing />
                 </a>
@@ -104,4 +111,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;
