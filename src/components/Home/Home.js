@@ -31,7 +31,7 @@ function Home() {
               </div>
             </Col>
 
-            <Col md={4} className="myAvtar" style={{ textAlign: "center" }}>
+            <Col md={5} className="myAvtar" style={{ textAlign: "center" }}>
               <Tilt>
                 <img
                   src={myImg}

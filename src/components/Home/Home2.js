@@ -39,7 +39,7 @@ function Home2() {
             </div>
           </Col>
 
-          <Col md={5} style={{ paddingBottom: 20 }}>
+          <Col md={4} style={{ paddingBottom: 20 }}>
             <img
               src={homeLogo}
               alt="home pic"
