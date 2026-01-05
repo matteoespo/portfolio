@@ -1,8 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import myImg from "../../Assets/avatar.png";
-import Tilt from "react-parallax-tilt";
+import homeLogo from "../../Assets/home-main.svg";
 import { AiFillGithub, AiFillMail } from "react-icons/ai";
 import { FaLinkedinIn, FaXing } from "react-icons/fa";
 
