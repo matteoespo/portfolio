@@ -12,10 +12,7 @@ function Home() {
       <Container fluid className="home-section" id="home">
         <Particle />
         <Container className="home-content">
-          {/* AGGIUNTA QUI: style={{ alignItems: "center" }} 
-             Questo forza l'allineamento verticale al centro tra testo e immagine
-          */}
-          <Row style={{ alignItems: "center" }}> 
+          <Row>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 Hi{" "}
@@ -28,7 +25,8 @@ function Home() {
                 I'M
                 <strong className="main-name"> MATTEO ESPOSITO MARROCCELLA</strong>
               </h1>
-              <div style={{ padding: 30, textAlign: "left" }}>
+
+              <div style={{ padding: 10, textAlign: "left" }}>
                 <Type />
               </div>
             </Col>
