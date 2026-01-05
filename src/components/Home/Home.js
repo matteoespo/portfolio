@@ -26,7 +26,7 @@ function Home() {
                 <strong className="main-name"> MATTEO ESPOSITO MARROCCELLA</strong>
               </h1>
 
-              <div style={{ padding: 10, textAlign: "left" }}>
+              <div style={{ padding: 30, textAlign: "left" }}>
                 <Type />
               </div>
             </Col>
@@ -37,7 +37,7 @@ function Home() {
                   src={myImg}
                   className="img-fluid"
                   alt="avatar"
-                  style={{ maxHeight: "400px" }}
+                  style={{ maxHeight: "400px", paddingBottom:50}}
                 />
               </Tilt>
             </Col>
