@@ -2,15 +2,16 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { DiGit } from "react-icons/di";
 import { FaWindows } from "react-icons/fa";
+// Aggiungi questo import per VS Code
+import { VscVscode } from "react-icons/vsc"; 
 import {
-  SiVisualstudiocode,
+  // Rimuovi SiVisualstudiocode da qui
   SiPostman,
   SiLinux,
   SiDocker,
   SiGitlab,
   SiGithub,
   SiKubernetes
-
 } from "react-icons/si";
 
 function Toolstack() {
@@ -22,7 +23,8 @@ function Toolstack() {
     { icon: <DiGit />, name: "Git" },
     { icon: <SiGitlab />, name: "GitLab" },
     { icon: <SiGithub />, name: "GitHub" },
-    { icon: <SiVisualstudiocode />, name: "VS Code" },
+    // Usa VscVscode qui
+    { icon: <VscVscode />, name: "VS Code" }, 
     { icon: <SiPostman />, name: "Postman" },
   ];
 
