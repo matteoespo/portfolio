@@ -31,13 +31,13 @@ function Home() {
               </div>
             </Col>
 
-            <Col md={5} className="myAvtar" style={{ textAlign: "center" }}>
+            <Col md={5} className="myAvtar" style={{ paddingBottom: 20 }}>
               <Tilt>
                 <img
                   src={myImg}
                   className="img-fluid"
                   alt="avatar"
-                  style={{ maxHeight: "400px", paddingBottom:200}}
+                  style={{ maxHeight: "400px"}}
                 />
               </Tilt>
             </Col>
