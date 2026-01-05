@@ -37,7 +37,7 @@ function Home() {
                   src={myImg}
                   className="img-fluid"
                   alt="avatar"
-                  style={{ maxHeight: "400px"}}
+                  //style={{ maxHeight: "350px"}}
                 />
               </Tilt>
             </Col>
