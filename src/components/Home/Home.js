@@ -26,18 +26,17 @@ function Home() {
                 <strong className="main-name"> MATTEO ESPOSITO MARROCCELLA</strong>
               </h1>
 
-              <div style={{ padding: 40, textAlign: "left" }}>
+              <div style={{ padding: 45, textAlign: "left" }}>
                 <Type />
               </div>
             </Col>
 
-            <Col md={5} className="myAvtar" style={{ paddingBottom: 20 }}>
+            <Col md={5} className="myAvtar" style={{ paddingBottom: 200 }}>
               <Tilt>
                 <img
                   src={myImg}
                   className="img-fluid"
                   alt="avatar"
-                  //style={{ maxHeight: "350px"}}
                 />
               </Tilt>
             </Col>
