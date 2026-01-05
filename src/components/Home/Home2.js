@@ -40,16 +40,15 @@ function Home2() {
             </div>
           </Col>
 
-          <Col md={4} className="myAvtar" style={{ textAlign: "center" }}>
-            <Tilt>
-              <img
-                src={myImg}
-                className="img-fluid"
-                alt="avatar"
-                style={{ maxHeight: "300px" }}
-              />
-            </Tilt>
+          <Col md={5} style={{ paddingBottom: 20 }}>
+            <img
+              src={homeLogo}
+              alt="home pic"
+              className="img-fluid"
+              style={{ maxHeight: "450px" }}
+            />
           </Col>
+
         </Row>
 
         <Row style={{ marginTop: "25px" }}>
