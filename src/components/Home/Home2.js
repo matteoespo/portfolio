@@ -16,17 +16,17 @@ function Home2() {
             </h1>
 
             <p className="home-about-body">
-              I work on software for <b className="purple">simulation</b> and{" "}
-              <b className="purple">automated systems</b>, with a focus on
-              engineering tooling that is reproducible and easy to maintain.
+              I engineer <b className="purple">data pipelines</b> and{" "}
+              <b className="purple">backend infrastructures</b>, with a focus on
+              building scalable, reproducible, and easy-to-maintain cloud solutions.
             </p>
 
             <p className="home-about-body" style={{ marginTop: "10px" }}>
-              <span className="purple">•</span> Scenario generation & simulation workflows
+              <span className="purple">•</span> Data Ingestion & ETL workflows
               <br />
-              <span className="purple">•</span> Robotics/automated driving software stacks
+              <span className="purple">•</span> Backend Architecture & MLOps infrastructure
               <br />
-              <span className="purple">•</span> Automation & pipelines (Python, CI/CD, Docker)
+              <span className="purple">•</span> Automation & Cloud Tooling (Python, CI/CD, Docker)
             </p>
 
             <div style={{ marginTop: 18, display: "flex", gap: "12px", flexWrap: "wrap" }}>
@@ -47,7 +47,6 @@ function Home2() {
               style={{ maxHeight: "450px" }}
             />
           </Col>
-
         </Row>
 
         <Row style={{ marginTop: "25px" }}>
