@@ -13,15 +13,15 @@ function AboutCard() {
             <span className="purple">Munich, Germany</span>.
             <br />
             <br />
-            I'm a software engineer with a strong interest in{" "}
-            <span className="purple">simulation</span>,{" "}
-            <span className="purple">automated systems</span> and{" "}
-            <span className="purple">robotics/automated driving</span>.
-            I enjoy building reliable tools and pipelines, from backend/services to
-            simulation workflows, with a focus on clean engineering and measurable results.
+            I'm a software engineer with a strong focus on{" "}
+            <span className="purple">Data Engineering</span>,{" "}
+            <span className="purple">Backend Architecture</span> and{" "}
+            <span className="purple">Cloud Infrastructure</span>.
+            I enjoy building scalable ETL pipelines, enterprise-grade backend services, and reliable 
+            deployment workflows, with a focus on clean engineering and data integrity.
             <br />
             <br />
-            Currently, I work as a <span className="purple">Working Student Developer</span> at{" "}
+            Currently, I work as a <span className="purple">Software Engineer (Working Student)</span> at{" "}
             <span className="purple">Siemens AG</span> while completing my{" "}
             <span className="purple">M.Sc. in Informatics</span> at{" "}
             <span className="purple">TUM</span>.
@@ -33,13 +33,13 @@ function AboutCard() {
 
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Simulation & scenario generation
+              <ImPointRight /> Data Ingestion & ETL Pipelines
             </li>
             <li className="about-activity">
-              <ImPointRight /> Backend tools and automation (Python, CI/CD)
+              <ImPointRight /> Backend Architecture (Python, SQL, Django)
             </li>
             <li className="about-activity">
-              <ImPointRight /> Robotics software stacks (ROS2, sensors, mapping)
+              <ImPointRight /> Cloud Deployment & Automation (Docker, Kubernetes, CI/CD)
             </li>
           </ul>
         </blockquote>
