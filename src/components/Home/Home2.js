@@ -22,11 +22,11 @@ function Home2() {
             </p>
 
             <p className="home-about-body" style={{ marginTop: "10px" }}>
-              <span className="purple">•</span> Data Ingestion & ETL workflows
+              <span className="purple">•</span> Fullstack Development
               <br />
-              <span className="purple">•</span> Backend Architecture & MLOps infrastructure
+              <span className="purple">•</span> AI Agents
               <br />
-              <span className="purple">•</span> Automation & Cloud Tooling (Python, CI/CD, Docker)
+              <span className="purple">•</span> Automation & Cloud Tooling
             </p>
 
             <div style={{ marginTop: 18, display: "flex", gap: "12px", flexWrap: "wrap" }}>

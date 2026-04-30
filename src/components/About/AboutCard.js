@@ -17,8 +17,7 @@ function AboutCard() {
             <span className="purple">Full Stack Engineering</span>,{" "}
             <span className="purple">Backend Architecture</span> and{" "}
             <span className="purple">Cloud Infrastructure</span>.
-            And, lately focusing on agentic AI:
-            <br />  
+            And, lately focusing on agentic AI{" "}
             <span className="purple">AI Agents</span>, <span className="purple">MLOps</span>, and{" "}
             <span className="purple">AI-Driven Automation</span>.
             <br />
@@ -42,7 +41,7 @@ function AboutCard() {
               <ImPointRight /> Full Stack Development (Python, JavaScript, Django, Vue.js)
             </li>
             <li className="about-activity">
-              <ImPointRight /> AI Agents (Python, FastAPI, LangChain, LangGram, RAG)
+              <ImPointRight /> AI Agents (Python, FastAPI, LangChain, LangGraph, RAG)
             </li>
             <li className="about-activity">
               <ImPointRight /> Cloud Deployment & Automation (Docker, Kubernetes, CI/CD)
