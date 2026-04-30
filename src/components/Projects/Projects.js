@@ -23,6 +23,7 @@ function Projects() {
               imgPath={docuragagent}
               isBlog={false}
               title="DocuQuery RAG Agent"
+              GithubLink="https://github.com/matteoespo/docuquery-rag-agent"
               description="An on-premise RAG agentic system designed to process and query technical documentation (PDFs). This project runs entirely locally using open-source LLMs. It features a microservices architecture decoupling the frontend, the API layer, and the AI reasoning engine. The system ingests PDFs, extracts text and metadata, and generates vector embeddings for efficient retrieval. Users can interact with the system through a web interface, asking questions about the documentation. The AI engine retrieves relevant information from the vector database and generates responses using an open-source LLM, providing accurate and context-aware answers based on the ingested documents."
             />
           </Col>
