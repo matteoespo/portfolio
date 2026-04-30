@@ -3,7 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 
-import comingSoon from "../../Assets/Projects/coming-soon.png";
+//import comingSoon from "../../Assets/Projects/coming-soon.png";
+import docuragagent from "../../Assets/Projects/docuragagent.png";
 import thesis from "../../Assets/Projects/thesis.png";
 import idp from "../../Assets/Projects/idp.png";
 
@@ -19,10 +20,10 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={comingSoon}
+              imgPath={docuragagent}
               isBlog={false}
-              title="Coming soon"
-              description="New personal projects will be added here soon."
+              title="DocuQuery RAG Agent"
+              description="An on-premise RAG agentic system designed to process and query technical documentation (PDFs). This project runs entirely locally using open-source LLMs. It features a microservices architecture decoupling the frontend, the API layer, and the AI reasoning engine. The system ingests PDFs, extracts text and metadata, and generates vector embeddings for efficient retrieval. Users can interact with the system through a web interface, asking questions about the documentation. The AI engine retrieves relevant information from the vector database and generates responses using an open-source LLM, providing accurate and context-aware answers based on the ingested documents."
             />
           </Col>
         </Row>
