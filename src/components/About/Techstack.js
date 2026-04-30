@@ -1,17 +1,15 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { DiPython, DiJavascript1, DiJava, DiMysql } from "react-icons/di";
-import { SiCplusplus, SiVuedotjs, SiDjango } from "react-icons/si";
+import { DiPython, DiJavascript1, DiMysql } from "react-icons/di";
+import {SiVuedotjs, SiDjango } from "react-icons/si";
 
 function Techstack() {
   const items = [
-    { icon: <SiCplusplus />, name: "C/C++" },
     { icon: <DiPython />, name: "Python" },
     { icon: <SiDjango />, name: "Django" },
     { icon: <SiVuedotjs />, name: "Vue.js" },
     { icon: <DiJavascript1 />, name: "JavaScript" },
     { icon: <DiMysql />, name: "SQL/MySQL" },
-    { icon: <DiJava />, name: "Java" },
   ];
 
   return (

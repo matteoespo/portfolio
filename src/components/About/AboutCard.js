@@ -14,10 +14,16 @@ function AboutCard() {
             <br />
             <br />
             I'm a software engineer with a strong focus on{" "}
-            <span className="purple">Data Engineering</span>,{" "}
+            <span className="purple">Full Stack Engineering</span>,{" "}
             <span className="purple">Backend Architecture</span> and{" "}
             <span className="purple">Cloud Infrastructure</span>.
-            I enjoy building scalable ETL pipelines, enterprise-grade backend services, and reliable 
+            And, lately focusing on agentic AI:
+            <br />  
+            <span className="purple">AI Agents</span>, <span className="purple">MLOps</span>, and{" "}
+            <span className="purple">AI-Driven Automation</span>.
+            <br />
+            <br />
+            I enjoy building scalable systems, production-ready backend services, and reliable 
             deployment workflows, with a focus on clean engineering and data integrity.
             <br />
             <br />
@@ -33,10 +39,10 @@ function AboutCard() {
 
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Data Ingestion & ETL Pipelines
+              <ImPointRight /> Full Stack Development (Python, JavaScript, Django, Vue.js)
             </li>
             <li className="about-activity">
-              <ImPointRight /> Backend Architecture (Python, SQL, Django)
+              <ImPointRight /> AI Agents (Python, FastAPI, LangChain, LangGram, RAG)
             </li>
             <li className="about-activity">
               <ImPointRight /> Cloud Deployment & Automation (Docker, Kubernetes, CI/CD)

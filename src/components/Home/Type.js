@@ -6,9 +6,9 @@ function Type() {
     <Typewriter
       options={{
         strings: [
-          "Data & Backend Engineer",
-          "Scalable Data Pipelines (ETL)",
-          "MLOps & Cloud Infrastructure",
+          "Full Stack & AI",
+          "Scalable Architectures",
+          "DevOps & Cloud Infrastructure",
           "Python • SQL • Django",
           "Docker • Kubernetes • CI/CD",
         ],

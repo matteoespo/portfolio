@@ -16,7 +16,7 @@ function Home2() {
             </h1>
 
             <p className="home-about-body">
-              I engineer <b className="purple">data pipelines</b> and{" "}
+              I engineer <b className="purple">scalable architectures</b> and{" "}
               <b className="purple">backend infrastructures</b>, with a focus on
               building scalable, reproducible, and easy-to-maintain cloud solutions.
             </p>
