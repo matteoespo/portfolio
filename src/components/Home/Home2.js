@@ -3,7 +3,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 /* import { Link } from "react-router-dom"; */
 import homeLogo from "../../Assets/home-main.svg";
 import { AiFillGithub, AiFillMail } from "react-icons/ai";
-import { FaLinkedinIn, FaXing } from "react-icons/fa";
+import { FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 function Home2() {
   return (
@@ -92,13 +92,13 @@ function Home2() {
 
               <li className="social-icons">
                 <a
-                  href="https://www.xing.com/profile/Matteo_EspositoMarroccella/"
+                  href="https://x.com/matteoespo99"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
-                  aria-label="xing"
+                  aria-label="twitter"
                 >
-                  <FaXing />
+                  <FaTwitter />
                 </a>
               </li>
             </ul>
