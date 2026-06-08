@@ -5,7 +5,6 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import Toolstack from "./Toolstack";
 import laptopImg from "../../Assets/about.png";
-import Github from "./Github";
 
 function About() {
   return (
@@ -65,7 +64,6 @@ function About() {
         </h1>
         <Toolstack />
 
-        <Github />
       </Container>
     </Container>
   );
