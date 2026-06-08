@@ -3,7 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 /*import logo from "../Assets/logo.png";*/
-import { Link } from "react-router-dom";
+/*import { Link } from "react-router-dom";*/
 /*import { ImBlog } from "react-icons/im";*/
 import {
   AiOutlineHome,
@@ -38,7 +38,7 @@ function NavBar() {
         
         <Navbar.Brand href="/" className="d-flex" width='90'>
           {/*<img src={logo} className="img-fluid logo" alt="brand"/>*/}
-          <strong className="main-name">MatteoEspo.</strong>
+          <strong className="main-name">~/MatteoEspo$</strong>
         </Navbar.Brand>
         
         
@@ -55,15 +55,14 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+              <Nav.Link href="#home" onClick={() => updateExpanded(false)}>
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
-                as={Link}
-                to="/about"
+                href="#about"
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
@@ -72,8 +71,7 @@ function NavBar() {
             {
             <Nav.Item>
               <Nav.Link
-                as={Link}
-                to="/project"
+                href="#project"
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineFundProjectionScreen
@@ -85,8 +83,7 @@ function NavBar() {
             }
             <Nav.Item>
               <Nav.Link
-                as={Link}
-                to="/resume"
+                href="#resume"
                 onClick={() => updateExpanded(false)}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume

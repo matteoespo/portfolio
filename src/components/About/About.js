@@ -5,7 +5,7 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import Toolstack from "./Toolstack";
 import laptopImg from "../../Assets/about.png";
-// import Github from "./Github"; // <- attivalo solo se ti serve davvero
+import Github from "./Github";
 
 function About() {
   return (
@@ -65,13 +65,7 @@ function About() {
         </h1>
         <Toolstack />
 
-        {/* OPTIONAL: GitHub section (consiglio: toglierla se è un template) */}
-        {/*
-        <h1 className="project-heading">
-          My <strong className="purple">GitHub</strong>
-        </h1>
         <Github />
-        */}
       </Container>
     </Container>
   );

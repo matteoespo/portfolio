@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
+/* import { Link } from "react-router-dom"; */
 import homeLogo from "../../Assets/home-main.svg";
 import { AiFillGithub, AiFillMail } from "react-icons/ai";
 import { FaLinkedinIn, FaXing } from "react-icons/fa";
@@ -30,10 +30,10 @@ function Home2() {
             </p>
 
             <div style={{ marginTop: 18, display: "flex", gap: "12px", flexWrap: "wrap" }}>
-              <Button as={Link} to="/about" variant="outline-light" style={{ borderWidth: "2px" }}>
+              <Button href="#about" variant="outline-light" style={{ borderWidth: "2px" }}>
                 More about me
               </Button>
-              <Button as={Link} to="/project" variant="primary">
+              <Button href="#project" variant="primary">
                 Projects
               </Button>
             </div>

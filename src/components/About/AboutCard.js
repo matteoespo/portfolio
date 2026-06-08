@@ -15,21 +15,15 @@ function AboutCard() {
             <br />
             I'm a software engineer with a strong focus on{" "}
             <span className="purple">Full Stack Engineering</span>,{" "}
-            <span className="purple">Backend Architecture</span> and{" "}
-            <span className="purple">Cloud Infrastructure</span>.
-            And, lately focusing on agentic AI{" "}
-            <span className="purple">AI Agents</span>, <span className="purple">MLOps</span>, and{" "}
+            <span className="purple">Backend Architecture</span> and
+            <span className="purple"> Cloud Infrastructure</span>.
+            And, lately focusing on 
+            <span className="purple">AI Agents</span>, and{" "}
             <span className="purple">AI-Driven Automation</span>.
             <br />
             <br />
             I enjoy building scalable systems, production-ready backend services, and reliable 
             deployment workflows, with a focus on clean engineering and data integrity.
-            <br />
-            <br />
-            Currently, I work as a <span className="purple">Software Engineer (Working Student)</span> at{" "}
-            <span className="purple">Siemens AG</span> while completing my{" "}
-            <span className="purple">M.Sc. in Informatics</span> at{" "}
-            <span className="purple">TUM</span>.
           </p>
 
           <p style={{ color: "rgb(155 126 255)", marginBottom: "8px" }}>
@@ -38,10 +32,10 @@ function AboutCard() {
 
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Full Stack Development (Python, JavaScript, Django, Vue.js)
+              <ImPointRight /> Full Stack Development (Python, Typescript, FastAPI, Django, React/Vue)
             </li>
             <li className="about-activity">
-              <ImPointRight /> AI Agents (Python, FastAPI, LangChain, LangGraph, RAG)
+              <ImPointRight /> AI Agents (LangChain, LangGraph, Pydantic, RAG, LLMs)
             </li>
             <li className="about-activity">
               <ImPointRight /> Cloud Deployment & Automation (Docker, Kubernetes, CI/CD)
