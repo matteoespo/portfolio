@@ -26,7 +26,7 @@ function AboutCard() {
             deployment workflows, with a focus on clean engineering and data integrity.
           </p>
 
-          <p style={{ color: "rgb(155 126 255)", marginBottom: "8px" }}>
+          <p className= "purple" style={{ marginBottom: "8px" }}>
             What I like working on:
           </p>
 
