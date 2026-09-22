@@ -6,7 +6,7 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 //import Blogs from "./components/Blogs/Blogs";
 import Footer from "./components/Footer";
-import Resume from "./components/Resume/ResumeNew";
+/*import Resume from "./components/Resume/ResumeNew";*/
 /* import ScrollToTop from "./components/ScrollToTop"; */
 import "./style.css";
 import "./App.css";
