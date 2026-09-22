@@ -3,7 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 
-//import comingSoon from "../../Assets/Projects/coming-soon.png";
 import docuragagent from "../../Assets/Projects/docuragagent.png";
 import thesis from "../../Assets/Projects/thesis.png";
 import idp from "../../Assets/Projects/idp.png";
@@ -17,13 +16,13 @@ function Projects() {
           <strong className="purple">Personal </strong>Projects
         </h1>
 
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+        <Row style={{ justifyContent: "center", paddingBottom: "20px" }}>
+          <Col md={7} lg={6} className="project-card">
             <ProjectCard
               imgPath={docuragagent}
               isBlog={false}
               title="DocuQuery RAG Agent"
-              GithubLink="https://github.com/matteoespo/docuquery-rag-agent"
+              ghLink="https://github.com/matteoespo/docuquery-rag-agent"
               description="An on-premise RAG agentic system designed to process and query technical documentation (PDFs). This project runs entirely locally using open-source LLMs. It features a microservices architecture decoupling the frontend, the API layer, and the AI reasoning engine. The system ingests PDFs, extracts text and metadata, and generates vector embeddings for efficient retrieval. Users can interact with the system through a web interface, asking questions about the documentation. The AI engine retrieves relevant information from the vector database and generates responses using an open-source LLM, providing accurate and context-aware answers based on the ingested documents."
             />
           </Col>
@@ -33,22 +32,22 @@ function Projects() {
           Projects at <strong className="purple">University</strong>
         </h1>
 
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
+        <Row style={{ justifyContent: "center", paddingBottom: "20px" }}>
+          <Col md={6} lg={5} className="project-card">
             <ProjectCard
               imgPath={thesis}
               isBlog={false}
               title="Assessment of Static Environment Fidelity on Automated Driving"
-              description={`Master's Thesis — Investigated how different levels of static environment fidelity in simulation (object density, textures, lighting, weather) affect the behavior of an automated driving software stack.\n\n Developed multiple variants of a simulated environment in CARLA with systematically varied static fidelity.\n Designed and ran scenarios with an automated driving system, combining objective metrics (lane-keeping, collision avoidance, comfort).\n\n Analyzed results to quantify when increased fidelity meaningfully impacts safety and comfort, and when it does not.`}
+              description={`Master's Thesis — Investigated how different levels of static environment fidelity in simulation (object density, textures, lighting, weather) affect the behavior of an automated driving software stack.\n\nDeveloped multiple variants of a simulated environment in CARLA with systematically varied static fidelity.\n\nDesigned and ran scenarios with an automated driving system, combining objective metrics (lane-keeping, collision avoidance, comfort).\n\nAnalyzed results to quantify when increased fidelity meaningfully impacts safety and comfort, and when it does not.`}
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={6} lg={5} className="project-card">
             <ProjectCard
               imgPath={idp}
               isBlog={false}
               title="Static Scenario Generation for Automated Driving"
-              description={`Semester Project — Built a pipeline to generate realistic static driving scenarios in CARLA using multimodal sensor data from real-world driving (camera, LiDAR, GNSS, odometry).\n\n Created concatenated LiDAR point clouds (GLIM), removed ground planes and applied clustering to extract edges and roadside objects.\n\n Used photogrammetry (Agisoft Metashape) to reconstruct 3D buildings/maps and integrated them into CARLA via Python API.\n\n Applied YOLO-based detection + clustering to label assets and fused 2D detections with 3D clusters, with support for assisted labeling.`}
+              description={`Semester Project — Built a pipeline to generate realistic static driving scenarios in CARLA using multimodal sensor data from real-world driving (camera, LiDAR, GNSS, odometry).\n\nCreated concatenated LiDAR point clouds (GLIM), removed ground planes and applied clustering to extract edges and roadside objects.\n\nUsed photogrammetry (Agisoft Metashape) to reconstruct 3D buildings/maps and integrated them into CARLA via Python API.\n\nApplied YOLO-based detection + clustering to label assets and fused 2D detections with 3D clusters, with support for assisted labeling.`}
             />
           </Col>
         </Row>

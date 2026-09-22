@@ -5,36 +5,40 @@ import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 
 function ProjectCards(props) {
+  const githubUrl = props.ghLink || props.GithubLink;
+
   return (
     <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+      <Card.Img variant="top" src={props.imgPath} alt={props.title || "card-img"} />
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
 
-        <Card.Text style={{ textAlign: "justify" }}>
+        <Card.Text>
           {props.description}
         </Card.Text>
 
-        {/* GitHub button: render only if ghLink exists */}
-        {props.ghLink && (
-          <Button variant="primary" href={props.ghLink} target="_blank" rel="noreferrer">
-            <BsGithub /> &nbsp;
-            {props.isBlog ? "Blog" : "GitHub"}
-          </Button>
-        )}
+        <div style={{ marginTop: "auto", paddingTop: "15px" }}>
+          {/* GitHub button */}
+          {githubUrl && (
+            <Button variant="primary" href={githubUrl} target="_blank" rel="noreferrer">
+              <BsGithub style={{ marginRight: "6px" }} />
+              {props.isBlog ? "Blog" : "GitHub"}
+            </Button>
+          )}
 
-        {/* Demo button: only if demoLink exists and it's not a blog */}
-        {!props.isBlog && props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            rel="noreferrer"
-            style={{ marginLeft: props.ghLink ? "10px" : "0px" }}
-          >
-            <CgWebsite /> &nbsp; Demo
-          </Button>
-        )}
+          {/* Demo button */}
+          {!props.isBlog && props.demoLink && (
+            <Button
+              variant="primary"
+              href={props.demoLink}
+              target="_blank"
+              rel="noreferrer"
+              style={{ marginLeft: githubUrl ? "10px" : "0px" }}
+            >
+              <CgWebsite style={{ marginRight: "6px" }} /> Demo
+            </Button>
+          )}
+        </div>
       </Card.Body>
     </Card>
   );

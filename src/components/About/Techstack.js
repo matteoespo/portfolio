@@ -34,11 +34,11 @@ function Techstack() {
             flexDirection: "column",
             alignItems: "center",
             gap: "8px",
-            padding: "15px 0",
+            padding: "16px 8px",
           }}
         >
-          <div style={{ fontSize: "3rem", lineHeight: 1 }}>{item.icon}</div>
-          <div style={{ color: "white", fontSize: "0.95rem" }}>{item.name}</div>
+          <div style={{ fontSize: "2.8rem", lineHeight: 1 }}>{item.icon}</div>
+          <div style={{ color: "var(--text-primary)", fontSize: "0.92rem", fontWeight: "500" }}>{item.name}</div>
         </Col>
       ))}
     </Row>

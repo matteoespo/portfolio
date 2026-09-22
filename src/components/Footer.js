@@ -1,19 +1,14 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-} from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 function Footer() {
-  let date = new Date();
-  let year = date.getFullYear();
+  const year = new Date().getFullYear();
   return (
     <Container fluid className="footer">
-      <Row>
-        <Col md="4" className="footer-copywright">
-          
-        </Col>
+      <Row className="align-items-center">
+        <Col md="4" className="d-none d-md-block"></Col>
         <Col md="4" className="footer-copywright">
           <h3>Copyright © {year} Matteo Esposito Marroccella</h3>
         </Col>
@@ -22,9 +17,9 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="https://github.com/matteoespo"
-                style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
+                aria-label="github"
               >
                 <AiFillGithub />
               </a>
@@ -32,9 +27,9 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="https://www.linkedin.com/in/matteo-esposito-marroccella/"
-                style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
+                aria-label="linkedin"
               >
                 <FaLinkedinIn />
               </a>
@@ -42,9 +37,9 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="https://x.com/matteoespo99"
-                style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
+                aria-label="twitter"
               >
                 <FaTwitter />
               </a>

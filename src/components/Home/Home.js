@@ -12,7 +12,7 @@ function Home() {
       <Container fluid className="home-section" id="home">
         <Particle />
         <Container className="home-content">
-          <Row>
+          <Row className="align-items-center">
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 Hi{" "}
@@ -26,19 +26,21 @@ function Home() {
                 <strong className="main-name"> MATTEO</strong>
               </h1>
 
-              <div style={{ padding: 45, textAlign: "left" }}>
+              <div style={{ padding: "40px 45px", textAlign: "left" }}>
                 <Type />
               </div>
             </Col>
 
-            <Col md={5} className="myAvtar" style={{ paddingBottom: 10, marginTop: -60 }}>
-              <Tilt>
-                <img
-                  src={myImg}
-                  className="img-fluid"
-                  alt="avatar"
-                  //style={{maxHeight: 350}}
-                />
+            <Col md={5} className="myAvtar" style={{ paddingBottom: 10 }}>
+              <Tilt tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000} scale={1.02}>
+                <div className="avatar-halo">
+                  <img
+                    src={myImg}
+                    className="img-fluid"
+                    alt="avatar"
+                    style={{ maxHeight: 380 }}
+                  />
+                </div>
               </Tilt>
             </Col>
           </Row>
