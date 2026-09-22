@@ -31,7 +31,7 @@ function App() {
         <div id="home"><Home /></div>
         <div id="about"><About /></div>
         <div id="project"><Projects /></div>
-        /*<div id="resume"><Resume /></div>*/
+        <!-- <div id="resume"><Resume /></div> -->
         <Footer />
       </div>
     </>
