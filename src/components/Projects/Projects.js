@@ -4,6 +4,7 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 
 import docuragagent from "../../Assets/Projects/docuragagent.png";
+import founderx from "../../Assets/Projects/founderx.png";
 import thesis from "../../Assets/Projects/thesis.png";
 import idp from "../../Assets/Projects/idp.png";
 
@@ -17,7 +18,17 @@ function Projects() {
         </h1>
 
         <Row style={{ justifyContent: "center", paddingBottom: "20px" }}>
-          <Col md={7} lg={6} className="project-card">
+          <Col md={6} lg={5} className="project-card">
+            <ProjectCard
+              imgPath={founderx}
+              isBlog={false}
+              title="FounderX"
+              ghLink="https://github.com/matteoespo/FounderX"
+              description="An autonomous venture sourcing and intelligence platform built for the Hack-Nation × Maschmeyer Group Challenge. FounderX helps investors discover and screen early-stage founders through natural-language sourcing, web research, and independent founder, market, and fund-fit scoring. It generates evidence-backed investment memos with claim-level trust scores, and supports investment decisions, outreach, pitch-deck storage, and audio narration. Built with TanStack Start, React, TypeScript, FastAPI, and MongoDB, with OpenAI and Groq model support."
+            />
+          </Col>
+
+          <Col md={6} lg={5} className="project-card">
             <ProjectCard
               imgPath={docuragagent}
               isBlog={false}
