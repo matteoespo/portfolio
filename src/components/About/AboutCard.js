@@ -13,16 +13,16 @@ function AboutCard() {
             <span className="purple">Munich, Germany</span>.
             <br />
             <br />
-            I'm a software engineer with a strong focus on{" "}
-            <span className="purple">Full Stack Engineering</span>,{" "}
-            <span className="purple">Backend Architecture</span>, and{" "}
-            <span className="purple">Cloud Infrastructure</span>. Lately, I have been deeply focused on{" "}
-            <span className="purple">AI Agents</span> and{" "}
-            <span className="purple">AI-Driven Automation</span>.
+            I'm a <span className="purple">Full Stack Software Engineer</span>. I work across the
+            whole stack, from <span className="purple">frontend interfaces</span> and{" "}
+            <span className="purple">backend services</span> to the{" "}
+            <span className="purple">cloud infrastructure</span> they are deployed on. More and
+            more, that includes integrating <span className="purple">AI features</span> such as
+            LLM agents and RAG into real products.
             <br />
             <br />
-            I enjoy building scalable architectures, production-ready backend services, and reliable 
-            deployment workflows, with a strong emphasis on clean engineering, reproducibility, and system resilience.
+            I enjoy shipping complete products: clean code, production-ready APIs and
+            reliable deployment workflows, with a strong emphasis on maintainability and reproducibility.
           </p>
 
           <p className="purple" style={{ marginBottom: "14px", fontWeight: "600", marginTop: "24px" }}>
@@ -31,13 +31,16 @@ function AboutCard() {
 
           <ul style={{ paddingLeft: 0 }}>
             <li className="about-activity">
-              <ImPointRight /> <span>Full Stack Development (Python, TypeScript, FastAPI, Django, React/Vue)</span>
+              <ImPointRight /> <span>Frontend Development (React, Next.js, Vue, TypeScript)</span>
             </li>
             <li className="about-activity">
-              <ImPointRight /> <span>AI Agents & Reasoning (LangChain, LangGraph, Pydantic, RAG, Open-source LLMs)</span>
+              <ImPointRight /> <span>Backend & APIs (Python, FastAPI, Django, PostgreSQL, Redis)</span>
             </li>
             <li className="about-activity">
               <ImPointRight /> <span>Cloud Deployment & Automation (Docker, Kubernetes, CI/CD, Microservices)</span>
+            </li>
+            <li className="about-activity">
+              <ImPointRight /> <span>AI Integrations (LangChain, LangGraph, Pydantic, RAG, local LLMs)</span>
             </li>
           </ul>
         </blockquote>

@@ -1,6 +1,6 @@
 # Portfolio
 
-Personal portfolio of **Matteo Esposito Marroccella**, AI & Software Engineer.
+Personal portfolio of **Matteo Esposito Marroccella**, Full Stack Software Engineer.
 
 **Live:** [espositomatteo.com](https://espositomatteo.com)
 

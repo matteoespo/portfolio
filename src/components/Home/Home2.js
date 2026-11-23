@@ -16,17 +16,20 @@ function Home2() {
             </h1>
 
             <p className="home-about-body">
-              I engineer <b className="purple">scalable architectures</b> and{" "}
-              <b className="purple">backend infrastructures</b>, with a focus on
-              building scalable, reproducible, and easy-to-maintain cloud solutions.
+              I build <b className="purple">full stack web applications</b> end to end, from{" "}
+              <b className="purple">React and TypeScript frontends</b> to{" "}
+              <b className="purple">Python backends and APIs</b>, and the cloud infrastructure
+              they run on. I care about software that is reliable, reproducible and easy to maintain.
             </p>
 
             <p className="home-about-body" style={{ marginTop: "14px" }}>
-              <span className="purple" style={{ marginRight: "8px" }}>•</span> Fullstack Development
+              <span className="purple" style={{ marginRight: "8px" }}>•</span> Frontend: React, Next.js, TypeScript
               <br />
-              <span className="purple" style={{ marginRight: "8px" }}>•</span> AI Agents & RAG Pipelines
+              <span className="purple" style={{ marginRight: "8px" }}>•</span> Backend & APIs: Python, FastAPI, Django, PostgreSQL
               <br />
-              <span className="purple" style={{ marginRight: "8px" }}>•</span> Automation & Cloud Infrastructure
+              <span className="purple" style={{ marginRight: "8px" }}>•</span> DevOps & Cloud: Docker, Kubernetes, CI/CD
+              <br />
+              <span className="purple" style={{ marginRight: "8px" }}>•</span> AI features: LLM integrations, agents and RAG
             </p>
 
             <div style={{ marginTop: 24, display: "flex", gap: "14px", flexWrap: "wrap" }}>

@@ -6,10 +6,10 @@ function Type() {
     <Typewriter
       options={{
         strings: [
-          "Full Stack & AI",
-          "Scalable Architectures",
-          "DevOps & Cloud Infrastructure",
-          "Python • SQL • Django",
+          "Full Stack Software Engineer",
+          "React • TypeScript • Next.js",
+          "Python • FastAPI • Django",
+          "PostgreSQL • Redis • REST APIs",
           "Docker • Kubernetes • CI/CD",
         ],
         autoStart: true,
