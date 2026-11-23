@@ -1,8 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.png";
+import myImg from "../../Assets/avatar.webp";
 import Tilt from "react-parallax-tilt";
-import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
 
@@ -10,7 +9,6 @@ function Home() {
   return (
     <section>
       <Container fluid className="home-section" id="home">
-        <Particle />
         <Container className="home-content">
           <Row className="align-items-center">
             <Col md={7} className="home-header">
@@ -37,7 +35,7 @@ function Home() {
                   <img
                     src={myImg}
                     className="img-fluid"
-                    alt="avatar"
+                    alt="Portrait of Matteo Esposito Marroccella"
                     style={{ maxHeight: 380 }}
                   />
                 </div>

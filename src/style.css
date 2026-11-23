@@ -101,33 +101,6 @@ button:focus {
 }
 
 /* --------- */
-/* Preloader */
-/* --------- */
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 999999;
-  background-color: var(--bg-canvas);
-  background-image: url(./Assets/pre.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  transition: opacity 0.5s ease-out;
-}
-
-#preloader-none {
-  opacity: 0;
-  pointer-events: none;
-}
-
-#no-scroll {
-  overflow: hidden;
-  height: 100vh;
-}
-
-/* --------- */
 /* Scrollbar */
 /* --------- */
 ::-webkit-scrollbar {
@@ -310,13 +283,14 @@ button:focus {
   100% { transform: rotate(0deg); }
 }
 
+/* One fixed particle layer for the whole page, drawn above section
+   backgrounds (z-index 1) but below the navbar; it never takes clicks. */
 #tsparticles {
   position: fixed !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
+  inset: 0;
   width: 100%;
   height: 100%;
-  z-index: 0;
+  z-index: 2;
   pointer-events: none;
 }
 
@@ -645,6 +619,7 @@ button:focus {
 .card-img-top {
   padding: 16px !important;
   border-radius: 14px !important;
+  aspect-ratio: 2 / 1;
   object-fit: cover;
   transition: transform 0.4s ease;
 }
@@ -677,6 +652,32 @@ button:focus {
   white-space: pre-line;
   flex-grow: 1;
   margin-bottom: 1.5rem !important;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.25rem 0;
+}
+
+.project-tag {
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 6px 10px;
+  border-radius: 999px;
+  color: var(--accent-primary);
+  background-color: var(--accent-soft);
+  border: 1px solid var(--border-hover);
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 /* --------- */

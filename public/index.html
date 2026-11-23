@@ -5,32 +5,41 @@
   <meta charset="utf-8" />
   <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
+  <meta name="theme-color" content="#0b0f17" />
   <meta name="description" content="Portfolio of Matteo Esposito Marroccella, an AI & Software Engineer." />
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="canonical" href="https://espositomatteo.com/" />
   <title>Matteo Esposito Marroccella | AI & Software Engineer</title>
-  <meta name="description" content="Portfolio of Matteo Esposito Marroccella, an AI & Software Engineer.">
+
+  <!-- Apply the saved theme before first paint to avoid a dark/light flash -->
+  <script>
+    try {
+      document.documentElement.setAttribute(
+        "data-theme",
+        localStorage.getItem("portfolio_theme") || "dark"
+      );
+    } catch (e) {}
+  </script>
 
   <!-- Google / Search Engine Tags -->
   <meta itemprop="name" content="Matteo Esposito Marroccella | AI & Software Engineer">
   <meta itemprop="description" content="Portfolio of Matteo Esposito Marroccella, an AI & Software Engineer.">
-  <meta itemprop="image"
-    content="https://github.com/matteoespo/personalwebsite/blob/main/Images/readme-img.png?raw=true">
-    
-  <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="https://matteoai.com">
+  <meta itemprop="image" content="https://espositomatteo.com/og-image.png">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:url" content="https://espositomatteo.com/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Matteo Esposito Marroccella | AI & Software Engineer">
   <meta property="og:description" content="Portfolio of Matteo Esposito Marroccella, an AI & Software Engineer.">
-  <meta property="og:image"
-    content="https://github.com/matteoespo/personalwebsite/blob/main/Images/readme-img.png?raw=true">
+  <meta property="og:image" content="https://espositomatteo.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Matteo Esposito Marroccella | AI & Software Engineer">
   <meta name="twitter:description" content="Portfolio of Matteo Esposito Marroccella, an AI & Software Engineer.">
-  <meta name="twitter:image"
-    content="https://github.com/matteoespo/personalwebsite/blob/main/Images/readme-img.png?raw=true">
+  <meta name="twitter:image" content="https://espositomatteo.com/og-image.png">
 </head>
 
 <body>

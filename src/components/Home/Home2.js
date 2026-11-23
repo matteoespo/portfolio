@@ -2,7 +2,8 @@ import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
 import { AiFillGithub, AiFillMail } from "react-icons/ai";
-import { FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 function Home2() {
   return (
@@ -56,7 +57,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="mailto: matteoespositomarroccella@gmail.com"
+                  href="mailto:matteoespositomarroccella@gmail.com"
                   rel="noreferrer"
                   className="home-social-icons"
                   aria-label="email"
@@ -95,9 +96,9 @@ function Home2() {
                   target="_blank"
                   rel="noreferrer"
                   className="home-social-icons"
-                  aria-label="twitter"
+                  aria-label="X (Twitter)"
                 >
-                  <FaTwitter />
+                  <FaXTwitter />
                 </a>
               </li>
             </ul>

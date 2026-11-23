@@ -1,7 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { AiFillGithub } from "react-icons/ai";
-import { FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 function Footer() {
   const year = new Date().getFullYear();
@@ -39,9 +40,9 @@ function Footer() {
                 href="https://x.com/matteoespo99"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="twitter"
+                aria-label="X (Twitter)"
               >
-                <FaTwitter />
+                <FaXTwitter />
               </a>
             </li>
           </ul>

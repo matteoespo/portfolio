@@ -9,16 +9,28 @@ function ProjectCards(props) {
 
   return (
     <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt={props.title || "card-img"} />
+      <Card.Img
+        variant="top"
+        src={props.imgPath}
+        alt={props.title ? `${props.title} preview` : "Project preview"}
+        loading="lazy"
+      />
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
 
-        <Card.Text>
-          {props.description}
-        </Card.Text>
+        <Card.Text>{props.description}</Card.Text>
 
-        <div style={{ marginTop: "auto", paddingTop: "15px" }}>
-          {/* GitHub button */}
+        {props.tags && props.tags.length > 0 && (
+          <ul className="project-tags" aria-label="Tech stack">
+            {props.tags.map((tag) => (
+              <li key={tag} className="project-tag">
+                {tag}
+              </li>
+            ))}
+          </ul>
+        )}
+
+        <div className="project-links">
           {githubUrl && (
             <Button variant="primary" href={githubUrl} target="_blank" rel="noreferrer">
               <BsGithub style={{ marginRight: "6px" }} />
@@ -26,16 +38,10 @@ function ProjectCards(props) {
             </Button>
           )}
 
-          {/* Demo button */}
           {!props.isBlog && props.demoLink && (
-            <Button
-              variant="primary"
-              href={props.demoLink}
-              target="_blank"
-              rel="noreferrer"
-              style={{ marginLeft: githubUrl ? "10px" : "0px" }}
-            >
-              <CgWebsite style={{ marginRight: "6px" }} /> Demo
+            <Button variant="primary" href={props.demoLink} target="_blank" rel="noreferrer">
+              {props.demoIcon || <CgWebsite style={{ marginRight: "6px" }} />}
+              {props.demoLabel || "Demo"}
             </Button>
           )}
         </div>
